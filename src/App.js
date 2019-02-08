@@ -1,16 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import firebase from "firebase";
-import StyledFirebaseAuth from "react-firebase/StyleFirebaseAuth";
+import Login from "./components/Login";
+import Home from "./components/Home";
 
 class App extends Component {
   state = { isSignedIn: false };
   render() {
-    return this.state.isSignedIn ? (
-      <div> Signed In!</div>
-    ) : (
-      <div> Not Signed In!</div>
-    );
+    return <div className="App">{this.state.user ? <Home /> : <Login />}</div>;
   }
 }
 
