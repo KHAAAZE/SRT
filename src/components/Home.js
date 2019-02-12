@@ -9,11 +9,11 @@ class Home extends Component {
           <tbody>
             <tr>
               <td>
-                <img alt="sample" width="80" src="truck-icon-0.png" />
+                <img alt="sample" width="80" src="Logo.png" />
               </td>
               <td width="10" />
               <td>
-                <h1 className="movieDB">SRT Transport Services</h1>
+                <h1 className="SRT">SRT Transport Services</h1>
               </td>
               <td />
               <td className="HomeBtnGap" />
@@ -37,6 +37,22 @@ class Home extends Component {
             </tr>
           </tbody>
         </table>
+        <footer className="footer">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img alt="sample" width="200" src="Logo.png" />
+                </td>
+                <td width="8" />
+                <td>
+                  <h1 className="SRT">SRT Transport Services</h1>
+                </td>
+                <td />
+              </tr>
+            </tbody>
+          </table>
+        </footer>
       </div>
     );
   }

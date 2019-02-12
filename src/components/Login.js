@@ -61,11 +61,13 @@ class Login extends Component {
           <tbody>
             <tr>
               <td>
-                <img alt="Logo" width="80" src="truck-icon-0.png" />
+                <img alt="Logo" width="80" src="logo.png" />
               </td>
               <td width="10" />
-              <td>
-                <h1 className="SRT">SRT Transport Services</h1>
+              <td className="aboutUs" background-color="white">
+                <a title="About Us" href="#aboutUs">
+                  About Us
+                </a>
               </td>
               <td />
               <td className="LoginBtnGap" />
@@ -99,6 +101,22 @@ class Login extends Component {
             </div>
           </ModalBody>
         </Modal>
+        <footer className="footer">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img alt="Logo" width="200" src="logo.png" />
+                </td>
+                <td width="8" />
+                <td>
+                  <h1 className="SRT">SRT Transport Services</h1>
+                </td>
+                <td />
+              </tr>
+            </tbody>
+          </table>
+        </footer>
       </div>
     );
   }
