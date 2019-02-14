@@ -12,45 +12,9 @@ firebase.initializeApp({
 
 class App extends Component {
   state = { isSignedIn: false };
-
-  toggle = () => {
-    this.setState({
-      modal: !this.state.modal
-    });
-  };
-
-  toggleNested = () => {
-    this.setState({
-      nestedModal: !this.state.nestedModal,
-      closeAll: false
-    });
-  };
-
-  toggleAll = () => {
-    this.setState({
-      nestedModal: !this.state.nestedModal,
-      closeAll: true
-    });
-  };
-
-  uiConfig = {
-    signInFlow: "popup",
-    signInOptions: [
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-      firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-      firebase.auth.GithubAuthProvider.PROVIDER_ID,
-      firebase.auth.EmailAuthProvider.PROVIDER_ID
-    ],
-    callbacks: {
-      signInSuccess: () => false
-    }
-  };
-
   componentDidMount = () => {
     firebase.auth().onAuthStateChanged(user => {
       this.setState({ isSignedIn: !!user });
-      console.log("user", user);
     });
   };
 

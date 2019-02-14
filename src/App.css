@@ -1,5 +1,9 @@
+login,
+footer {
+  scroll-behavior: auto;
+}
 .titleBar {
-  height: 90px;
+  height: 60px;
   position: sticky;
   top: 0px;
   background-color: #000;
@@ -9,30 +13,58 @@
   padding-top: 10px;
   max-width: 100%;
   max-height: 100%;
+  z-index: 1;
 }
 .SRT {
-  width: 100%;
+  width: 50%;
 }
 .HomeBtnGap {
-  width: 33%;
+  width: 66.8%;
 }
 .LoginBtnGap {
-  width: 50%;
+  width: 68.5%;
 }
 .userdetails {
   width: 18%;
 }
 .footer {
-  height: 300px;
+  height: 634px;
+  width: 100%;
   background-color: #000;
   display: block;
   color: #fff;
   padding-left: 60px;
   padding-top: 50px;
   max-width: 100%;
-  margin-top: 50px;
   text-transform: uppercase;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  position: absolute;
+  z-index: 1;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.contact-center {
+  font-size: 40px;
+  font-weight: bold;
+  width: 58%;
+  float: center;
+  padding-left: 22.5%;
+}
+.contact-left {
+  width: 58%;
+  float: left;
+  padding-left: 0%;
+  margin-top: 30px;
+}
+.contact-right {
+  width: 40%;
+  float: right;
+  margin-top: 10px;
+}
+.tblfooter {
+  width: 100%;
 }
 .propic {
   width: 40px;
@@ -40,6 +72,102 @@
   background: none;
   border-radius: 70px;
   margin-right: 2%;
+}
+.loginpropic {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border-radius: 70px;
+  margin-right: 2%;
+}
+svg {
+  margin-right: 15px;
+}
+.body {
+  margin-left: 15%;
+  padding: 40px 16px;
+  height: 1000px;
+  position: relative;
+}
+ul.login {
+  list-style-type: none;
+  margin-top: 2px;
+  padding: 0px;
+  width: 15%;
+  height: 100%;
+  background-color: #e9ebee;
+  position: fixed;
+  text-align: left;
+}
+
+li a {
+  display: block;
+  color: #000;
+  margin-top: 2.5%;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+li a.loginactive {
+  background-color: #ce1c17;
+  color: white;
+}
+
+li a:hover {
+  background-color: #ce1c17;
+  box-shadow: 0px 15px 20px rgba(201, 5, 5, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+p.address {
+  display: block;
+  width: 100%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 5%;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+}
+p.socialMedia {
+  display: block;
+  width: 100%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 4%;
+  margin-bottom: 2px;
+  text-transform: lowercase;
+}
+.googleMaps {
+  height: 100%;
+  width: 97%;
+}
+.opHrs {
+  margin-top: 4%;
+  margin-bottom: 1%;
+  font: bold;
+}
+.opTime {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 12%;
+  margin-bottom: 0%;
+}
+.opTimes {
+  font-size: 14px;
+  margin-top: 0;
+  margin-left: 16%;
+  margin-bottom: 3%;
 }
 @media screen and (max-width: 500px) {
   .titleBar {
